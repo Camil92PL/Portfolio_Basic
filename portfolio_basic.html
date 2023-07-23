@@ -12,6 +12,7 @@
             padding: 5px;
             box-shadow: 0 2px 5px black;
             justify-content: space-between;
+            border-radius: 5px;
         }
 
         .container {
@@ -25,6 +26,13 @@
             padding: 5px;
             box-shadow: 0 2px 5px black;
             margin-top: 10px;
+            border-radius: 5px;
+        }
+
+        .content1 img{
+            width: 100px;
+            height: auto;
+            margin: 5px 5px;
         }
 
         .content2 {
@@ -32,14 +40,25 @@
             padding: 5px;
             box-shadow: 0 2px 5px black;
             margin-top: 10px;
+            border-radius: 5px;
         }
+
+        #file {
+                display: none;
+        }
+
+        
         @media (min-width: 768px){
             .content1 {
                 margin-right: 10px;
+                min-width: 200px;
             }
             .container {
                 flex-direction: row;
             }
+            #file {
+                display: inline;
+        }
         }
         
         #logo {
@@ -58,7 +77,11 @@
             text-decoration: none;
             font-size:  18px;
             transition: color 0.3s ease;
+        }
 
+        .nav-content a:hover{
+            text-shadow: 0px 0px 5px black;
+            
         }
 
         .nav-content {
@@ -66,6 +89,57 @@
             gap: 20px;
             align-items: center;
             margin: 5px 5px;
+        }
+
+        footer {
+            display: flex;
+            flex-direction: column;
+            background: lightgray;
+            padding: 5px;
+            box-shadow: 0 2px 5px black;
+            justify-content: space-between;
+            margin-top: 10px;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .footer-columns {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 1200px;
+            margin-bottom: 20px;
+        }
+
+        .footer-section {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .footer-title {
+            border-bottom: 2px double black;
+            margin-bottom: 10px;
+        }
+
+        .footer-section a, .footer-section p {
+            color: black;
+            text-decoration: none;
+            margin-bottom: 5px;
+        }
+
+        .footer-section a:hover {
+            color: #007BFF;
+        }
+
+        .footer-socials {
+            display: flex;
+            justify-content: center;
+            gap: 14px;
+        }
+        
+        .footer-socials img {
+            width: 24px;
+            height: 24px;
         }
 
     </style>
@@ -90,11 +164,49 @@
     </header>
     <div class="container">
         <div class="content1">
-            <p>content1</p>
+                <img src="img/html5.png" alt="html5-image">
+                <progress id="file" value="60" max="100"> 32% </progress>
+                <img src="img/css.png" alt="css-image">
+                <progress id="file" value="32" max="100"> 32% </progress>           
         </div>
         <div class="content2">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus vero blanditiis vitae dolor totam molestias maxime corporis fugiat a quisquam rem voluptate minima, aspernatur earum consequatur sunt delectus sapiente iusto dicta, exercitationem, qui accusantium! Corrupti, at asperiores porro repudiandae expedita nam, vero obcaecati maiores quod recusandae placeat sunt saepe reiciendis debitis sit officiis eaque distinctio aspernatur dignissimos aliquam? Voluptatum, beatae. Nesciunt sapiente, fugiat culpa repellat eius voluptas qui hic inventore veniam reprehenderit cupiditate facilis iure doloribus eligendi quia illum, repudiandae deleniti vel doloremque deserunt fugit asperiores soluta non molestias? Optio ullam libero laborum obcaecati ipsum. Dignissimos numquam nam unde suscipit obcaecati deleniti veniam consectetur corrupti mollitia, temporibus voluptate velit delectus repudiandae! Eius autem, alias culpa, ea porro nemo ipsam cumque officia, deserunt quia sit illo vero facilis numquam deleniti aperiam vitae. Culpa animi quisquam doloribus tempora sint! Laudantium, quisquam iste? Ea exercitationem ad suscipit officiis dolores cupiditate, corporis veniam aliquid sint, ipsum labore eius nostrum odio nemo expedita. Voluptas nobis unde totam quas beatae molestiae id nemo corrupti quaerat commodi temporibus at iusto ducimus ipsam officiis suscipit libero atque omnis, consequatur earum debitis? Earum totam atque cumque eum ratione facere? Repellat asperiores, placeat corporis minima ipsam architecto doloribus eum! Veritatis voluptates debitis saepe fugit earum ducimus corrupti, expedita rerum alias minus tempora blanditiis magni maiores eos. Nisi commodi eveniet, facilis optio aliquid ex nobis molestiae illum voluptates aspernatur dignissimos quasi in reiciendis odit at quidem sed maxime suscipit eligendi rem hic. Qui tenetur quos cupiditate, totam voluptatum suscipit tempora vitae doloribus maxime iure, fugiat consequuntur corporis sunt dicta distinctio labore autem reiciendis aspernatur exercitationem error? Ipsum minus porro nulla. Officiis ab ducimus ratione commodi obcaecati aliquam, cum pariatur suscipit harum repellendus doloremque. Ullam enim quisquam quibusdam quasi doloremque aliquid quaerat quis illum repellat, voluptas totam iusto excepturi est dolore accusantium aspernatur atque reprehenderit voluptates nemo placeat fugit, beatae inventore consequuntur. A ex sit esse possimus rem! Natus error laborum cupiditate eos sunt dolore, eligendi explicabo ipsam magnam nesciunt rerum illo impedit omnis placeat optio, voluptatibus doloremque sit enim asperiores nostrum molestias? Nobis praesentium optio natus deserunt fuga eos vero, assumenda et quae laborum sed consequatur, reiciendis architecto, nostrum nisi possimus quia. Amet dolorem debitis rerum explicabo fugiat ducimus rem nisi exercitationem consectetur laborum excepturi maxime voluptatem dolor odio sunt ipsam culpa, assumenda tempora quaerat sequi! Consectetur facere voluptatibus, ipsam a provident pariatur eaque reiciendis perferendis labore placeat. Veniam deleniti aliquam, distinctio ut voluptate fugiat cum voluptatibus earum quo labore, hic molestiae esse dicta rerum velit? Impedit quae, repellendus pariatur cum distinctio deserunt fugiat possimus quisquam voluptate modi amet, reprehenderit molestiae recusandae, dolorem nulla tempora dicta dignissimos in laborum expedita temporibus ducimus! Tempore amet possimus voluptate? Beatae tenetur reprehenderit, natus id voluptas animi fuga rem placeat molestiae quae non nam voluptatibus blanditiis laudantium minus amet facilis autem maxime! Eos, eum excepturi vero minima aliquid unde debitis, hic cumque ab quam quo consequatur veritatis iste distinctio qui. Quisquam optio tempore quia vel, architecto, asperiores esse sit nihil aperiam quae, ipsa hic totam?</p>
         </div>
     </div>
+    <footer>
+        <div class="footer-columns">
+            <div class="footer-section">
+                <h4 class="footer-title">Company</h4>
+                <a href="#">Homepage</a>
+                <a href="#">About Us</a>
+                <a href="#">FAQ</a>
+                <a href="#">TOS</a>
+            </div>
+            <div class="footer-section">
+                <h4 class="footer-title">Help</h4>
+                <a href="#">Help</a>
+                <a href="#">Affiliates</a>
+                <a href="#">FAQ</a>
+                <a href="#">Shipping info</a>
+            </div>
+            <div class="footer-section">
+                <h4 class="footer-title">Address</h4>
+                <p>Ulica 123</p>
+                <p>00-000 Miasto</p>
+                <p>Poland</p>
+            </div>
+        </div>
+        <div class="footer-socials">
+            <a href="#">
+                <img src="https://cdn.pixabay.com/photo/2016/08/01/21/00/icon-1562136_640.png" alt="">
+            </a>
+            <a href="#">
+                <img src="https://cdn.pixabay.com/photo/2015/07/13/07/41/icons-842893_640.png" alt="">
+            </a>
+            <a href="#">
+                <img src="https://cdn.pixabay.com/photo/2015/09/15/22/47/logo-941916_640.png" alt="">
+            </a>
+        </div>
+    </footer>
 </body>
 </html>
